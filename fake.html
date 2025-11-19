@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fake News Checker (Demo)</title>
+  <link rel="stylesheet" href="fake.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Fake News Checker — Demo</h1>
+
+    <label for="claim">Check this text / claim:</label>
+    <textarea id="claim" placeholder="Type or paste a claim or sentence to check"></textarea>
+
+    <div class="controls">
+      <button id="checkBtn">Check</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+
+    <section id="result">
+      <h2>Result</h2>
+      <div id="output">No check yet.</div>
+    </section>
+
+    <footer>
+      <small>Demo uses Google Fact Check Tools API. For production use a backend proxy to hide API key.</small>
+    </footer>
+  </main>
+
+  <script src="fake.js"></script>
+</body>
+</html>
